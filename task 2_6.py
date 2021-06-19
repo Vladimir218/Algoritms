@@ -9,8 +9,12 @@ a = random.randrange(0,101,1);
 count = 1;
 c = -1;
 while count < 11 and a != c:
-   c = int(input(f'попробуйте угадать число {a=}. У вас попытка {count}: '));
-   count += 1;
+    c = int(input(f'попробуйте угадать число от 0 до 100. У вас попытка {count}: '));
+    count += 1;
+    if c<a and count < 11:
+        print(f'Вы не угадали. Загаданное число больше {c}');
+    elif c>a and count < 11:
+       print(f'Вы не угадали. Загаданное число меньше {c}');
 
 if a == c:
     print(f'Вы угадали число {a=} c {count - 1} попытки');
