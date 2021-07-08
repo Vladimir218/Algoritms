@@ -26,4 +26,4 @@ m= int(input('Введите m для генерации случайного м
 numbers = [randint(-100, 100) for i in range(2*m+1)]
 
 print('Исходный массив:', numbers)
-print('Медиана:', median(numbers[:]))
+print('Медиана:', median(numbers))
